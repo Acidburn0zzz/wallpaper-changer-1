@@ -1,6 +1,4 @@
-#!/bin/python3
-
-#Just importing somethings
+#!/usr/bin/python
 import os, time, sys, random, shutil
 from subprocess import call
 
