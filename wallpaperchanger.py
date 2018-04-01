@@ -22,6 +22,6 @@ if len(sys.argv)==4:
         #Copies the file
         shutil.copy2(FILE, DST)
         #Reseats i3wm
-        call(["i3", "restart"])
+        call(["wal", "-gc", "-i", FILE, "-a 70"])
 else:
     print("Please make sure that you have 3 arguments at the end of the command")
