@@ -12,11 +12,6 @@ exec_always --no-startup-d wal -c -g -i ~/.config/wall.png -a 70
 exec_always --no-startup-id bash ~/.config/wallpaperchanger/launch.sh
 ```
 This will make your wallpaper change on reset every 5 minutes (you can change the config file and the wallpaper file to your liking)
- ```bash
-exec_always --no-startup-id wal -g -c -i ~/.config/wall.png -a 70
-```
-You could also add this to change your terminals color scheme to your wall paper (please install https://github.com/dylanaraps/pywal pywal)
-
 ## Syntax
 After install the comand works, with
 * First argument MUST be the directory of your wallaper folder (and it must only have images in it)
