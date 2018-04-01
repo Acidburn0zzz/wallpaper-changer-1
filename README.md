@@ -8,7 +8,7 @@ git clone https://github.com/GitOffMyLAN/wallpaper-changer.git && cd wallpaper-c
 You will need to add these commands to your i3wm config (please install https://github.com/derf/feh feh)
 ```bash
 exec_always --no-startup-id feh --bg-scale ~/.config/wall.png
-exec_always --no-startup-id bash ~/.config/wallpaperchanger/launcher.sh
+exec_always --no-startup-id bash ~/.config/wallpaperchanger/launch.sh
 ```
 This will make your wallpaper change on reset every 5 minutes (you can change the config file and the wallpaper file to your liking)
  ```bash
@@ -22,4 +22,4 @@ After install the comand works, with
 * Second argument MUSR be the place in your config you store you wallpaper for feh
 * Third arguemtn MUST be the time between wallpapers chaging and updating
 
-you can update these values in the launch.sh file your .config/wallpaperchanger
+you can change these values in ~/.config/wallpaperchanger/launch.sh
