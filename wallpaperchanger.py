@@ -12,17 +12,16 @@ if len(sys.argv)==4:
     TIME = float(sys.argv[3])
     #Sets directory to the image directory
     os.chdir(DIR)
-    while True:
-        #Waits till the time is set
-        time.sleep(TIME)
-        #Selects a random image file
-        FILE = random.choice(os.listdir(DIR))
-        #Deletes the image in the pictuers distanation
-        os.remove(DST)
-        #Copies the file
-        shutil.copy2(FILE, DST)
-        #Reseats i3wm
-        call(["wal", "-gc", "-i", DST , "-a 70"])
-        call(["feh", "--bg-scale", DST])
+    #Waits till the time is set
+    time.sleep(TIME)
+    #Selects a random image file
+    FILE = random.choice(os.listdir(DIR))
+    #Deletes the image in the pictuers distanation
+    os.remove(DST)
+    #Copies the file
+    shutil.copy2(FILE, DST)
+    #Reseats i3wm
+    call(["wal", "-gc", "-i", DST , "-a 70"])
+    call(["feh", "--bg-scale", DST])
 else:
     print("Please make sure that you have 3 arguments at the end of the command")
