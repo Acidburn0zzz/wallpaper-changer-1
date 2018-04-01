@@ -1,17 +1,29 @@
-import os
-#i3wm wallpaper picker
-#set's wallpaper dir
-wallpapersdir = #what ever -p is
-i3wm = '~/.config/i3'
-#sees if there is a wallpaper dir
-if wallpaperdir == False:
-    print('Please set a -p wallpaper dir')
+#!/bin/python3
 
-#adds data to i3 configs
+#Just importing somethings
+import os, time, sys, random, shutil
+from subprocess import call
 
-#sets timmer
-    #copies file every -t seconds
-    #restarts i3wm
-#Options
-# -p = wallpaperdir
-# -t = time
+#See if there is the right amount of arguments
+if len(sys.argv)==4:
+    #Sets the wallpaper directory
+    DIR = sys.argv[1]
+    #Sets the pictuers desternation
+    DST = sys.argv[2]
+    #Sets the time to pause
+    TIME = float(sys.argv[3])
+    #Sets directory to the image directory
+    os.chdir(DIR)
+    while True:
+        #Waits till the time is set
+        time.sleep(TIME)
+        #Selects a random image file
+        FILE = random.choice(os.listdir(DIR))
+        #Deletes the image in the pictuers distanation
+        os.remove(DST)
+        #Copies the file
+        shutil.copy2(FILE, DST)
+        #Reseats i3wm
+        call(["i3", "restart"])
+else:
+    print("Please make sure that you have 3 arguments at the end of the command")
