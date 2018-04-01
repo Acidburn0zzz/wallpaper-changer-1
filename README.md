@@ -12,7 +12,7 @@ exec_always --no-startup-d wal -c -g -i ~/.config/wall.png -a 70
 exec_always --no-startup-id bash ~/.config/wallpaperchanger/launch.sh
 ```
 This will make your wallpaper change on reset every 5 minutes (you can change the config file and the wallpaper file to your liking)
-=======
+```
 exec_always --no-startup-id bash ~/.config/wallpaperchanger/launch.sh
 ```
 This will make your wallpaper change on reset every 5 minutes (you can change the config file and the wallpaper file to your liking)
