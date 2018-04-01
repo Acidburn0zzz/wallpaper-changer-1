@@ -21,4 +21,5 @@ After install the comand works, with
 * First argument MUST be the directory of your wallaper folder (and it must only have images in it)
 * Second argument MUSR be the place in your config you store you wallpaper for feh
 * Third arguemtn MUST be the time between wallpapers chaging and updating
+
 you can update these values in the launch.sh file your .config/wallpaperchanger
