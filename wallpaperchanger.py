@@ -3,7 +3,7 @@ import os, time, sys, random, shutil
 from subprocess import call
 
 #See if there is the right amount of arguments
-if len(sys.argv)==4:
+if len(sys.argv)==5:
     #Sets the wallpaper directory
     DIR = sys.argv[1]
     #Sets the pictuers desternation
