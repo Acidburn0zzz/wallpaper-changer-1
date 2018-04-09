@@ -22,7 +22,7 @@ if len(sys.argv)==4:
         #Copies the file
         shutil.copy2(FILE, DST)
         #Reseats i3wm
-        call(["wal", "-c", "-i", DST, "-a 70"])
+        call(["wal", "-c", "-i", DST, "-a ", sys.argv[4]])
         call(["feh", "--bg-scale", DST])
 else:
     print("Please make sure that you have 3 arguments at the end of the command")
