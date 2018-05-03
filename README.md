@@ -21,7 +21,7 @@ You need to isntall https://github.com/dylanaraps/pywal pywal for the script to 
 ## Syntax
 After install the comand works, with
 * First argument MUST be the directory of your wallaper folder (and it must only have images in it)
-* Second argument MUSR be the place in your config you store you wallpaper for feh
+* Second argument MUST be the place in your config you store you wallpaper for feh
 * Third arguemnt MUST be the time between wallpapers chaging and updating
 * Forth argument MUST be the trasnparecy of your terminal
 you can change these values in ~/.config/wallpaperchanger/launch.sh
